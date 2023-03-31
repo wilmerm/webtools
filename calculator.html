@@ -1,0 +1,202 @@
+<html>
+  <head>
+    <style>
+      #calculator {
+        width: 300px;
+        padding: 8px;
+        border: 1px solid #bbb;
+        box-shadow: 1px 1px 5px 0px #00000080;
+      }
+      #display {
+        margin-bottom: 4px;
+        height: 40px;
+        border: 0;
+        background-color: #ddd;
+        text-align: right;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 8px;
+        font-family: 'Courier New', Courier, monospace;
+      }
+      .buttons {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+      .buttons button {
+        width: 24%;
+        min-height: 50px;
+        padding: 8px;
+        margin: 0;
+        border: 0;
+        margin-bottom: 4px;
+        cursor: pointer;
+        opacity: 0.7;
+        font-weight: bold;
+      }
+      .buttons button:hover {
+        opacity: 1;
+      }
+      #btn-div, #btn-mult, #btn-sub, #btn-sum, #btn-equal {
+        background-color: #e9d994;
+      }
+      #btn-percent, #btn-ce, #btn-c {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="calculator">
+        <div id="display"></div>
+        <div class="buttons">
+          <div>
+            <button id="btn-percent">%</button>
+            <button id="btn-ce">CE</button>
+            <button id="btn-c">C</button>
+            <button id="btn-div">/</button>
+          </div>
+          <div>
+            <button id="btn-7">7</button>
+            <button id="btn-8">8</button>
+            <button id="btn-9">9</button>
+            <button id="btn-mult">x</button>
+          </div>
+          <div>
+            <button id="btn-4">4</button>
+            <button id="btn-5">5</button>
+            <button id="btn-6">6</button>
+            <button id="btn-sub">-</button>
+          </div>
+          <div>
+            <button id="btn-1">1</button>
+            <button id="btn-2">2</button>
+            <button id="btn-3">3</button>
+            <button id="btn-sum">+</button>
+          </div>
+          <div>
+            <button id="">_</button>
+            <button id="btn-0">0</button>
+            <button id="btn-point">.</button>
+            <button id="btn-equal">=</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const display = document.getElementById('display');
+    const btn_percent = document.getElementById('btn-percent');
+    const btn_ce = document.getElementById('btn-ce');
+    const btn_c = document.getElementById('btn-c');
+    const btn_0 = document.getElementById('btn-0');
+    const btn_1 = document.getElementById('btn-1');
+    const btn_2 = document.getElementById('btn-2');
+    const btn_3 = document.getElementById('btn-3');
+    const btn_4 = document.getElementById('btn-4');
+    const btn_5 = document.getElementById('btn-5');
+    const btn_6 = document.getElementById('btn-6');
+    const btn_7 = document.getElementById('btn-7');
+    const btn_8 = document.getElementById('btn-8');
+    const btn_9 = document.getElementById('btn-9');
+    const btn_div = document.getElementById('btn-div');
+    const btn_mult = document.getElementById('btn-mult');
+    const btn_sub = document.getElementById('btn-sub');
+    const btn_sum = document.getElementById('btn-sum');
+    const btn_equal = document.getElementById('btn-equal');
+    const btn_point = document.getElementById('btn-point');
+
+    btn_percent.onclick = function() {
+      addToDisplay('%');
+    }
+
+    btn_ce.onclick = function() {
+      clearDisplay('ce');
+    }
+
+    btn_c.onclick = function() {
+      clearDisplay('c');
+    }
+
+    btn_0.onclick = function() {
+      addToDisplay('0');
+    }
+
+    btn_1.onclick = function() {
+      addToDisplay('1');
+    }
+
+    btn_2.onclick = function() {
+      addToDisplay('2');
+    }
+
+    btn_3.onclick = function() {
+      addToDisplay('3');
+    }
+
+    btn_4.onclick = function() {
+      addToDisplay('4');
+    }
+
+    btn_5.onclick = function() {
+      addToDisplay('5');
+    }
+
+    btn_6.onclick = function() {
+      addToDisplay('6');
+    }
+
+    btn_7.onclick = function() {
+      addToDisplay('7');
+    }
+
+    btn_8.onclick = function() {
+      addToDisplay('8');
+    }
+
+    btn_9.onclick = function() {
+      addToDisplay('9');
+    }
+
+    btn_1.onclick = function() {
+      addToDisplay('1');
+    }
+
+    btn_div.onclick = function() {
+      addToDisplay('/');
+    }
+
+    btn_mult.onclick = function() {
+      addToDisplay('*');
+    }
+
+    btn_sub.onclick = function() {
+      addToDisplay('-');
+    }
+
+    btn_sum.onclick = function() {
+      addToDisplay('+');
+    }
+
+    btn_equal.onclick = function() {
+      calculate();
+    }
+
+    btn_point.onclick = function() {
+      addToDisplay('.');
+    }
+
+    const addToDisplay = function(value) {
+      display.innerHTML += value;
+    }
+
+    const calculate = function() {
+      display.innerHTML = eval(display.innerHTML);
+    }
+
+    const clearDisplay = function(value) {
+      display.innerHTML = '';
+    }
+
+  </script>
+</html>
