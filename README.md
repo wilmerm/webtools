@@ -21,8 +21,6 @@ To use the BTU Calculator, simply include the following HTML code in your projec
 </script>
 ```
 
-Replace "./path-to-your" with the actual path to your simple-webtools distribution folder.
-
 ## Installation
 
 ### CDN
