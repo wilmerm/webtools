@@ -25,13 +25,17 @@ Replace "./path-to-your" with the actual path to your simple-webtools distributi
 
 ## Installation
 
-Install with Npm
+### CDN
+
+[https://unpkg.com/simple-webtools@latest/dist/webtools.js](https://unpkg.com/simple-webtools@latest/dist/webtools.js)
+
+### Install with Npm
 
 ```.sh
 npm install simple-webtools
 ```
 
-Install with Yarn
+### Install with Yarn
 
 ```.sh
 yarn add simple-webtools
