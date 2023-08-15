@@ -13,7 +13,7 @@ To use the BTU Calculator, simply include the following HTML code in your projec
 ```.html
 <div id="btuCalculator"></div>
 
-<script src="./path-to-your/simple-webtools/dist/webtools.js"></script>
+<script src="https://unpkg.com/simple-webtools@latest/dist/webtools.js"></script>
 
 <script>
   // Create a BTU calculator
