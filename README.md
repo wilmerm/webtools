@@ -4,7 +4,7 @@ simple-webtools is a collection of lightweight web tools designed to simplify de
 
 ## The webtools
 
-### BTU Calculator
+### btuCalculator (BTU Calculator)
 
 The BTU Calculator is a tool to help you calculate the recommended BTU (British Thermal Units) for air conditioning based on specific room dimensions.
 
@@ -20,6 +20,8 @@ To use the BTU Calculator, simply include the following HTML code in your projec
   webtools.btuCalculator.create();
 </script>
 ```
+
+![image](https://github.com/wilmerm/webtools/assets/44853160/f8872ed1-de21-4195-b26f-8aed3b035caf)
 
 ## Installation
 
