@@ -4,7 +4,7 @@ simple-webtools is a collection of lightweight web tools designed to simplify de
 
 ## The webtools
 
-### BTU Calculator
+### btuCalculator (BTU Calculator)
 
 The BTU Calculator is a tool to help you calculate the recommended BTU (British Thermal Units) for air conditioning based on specific room dimensions.
 
@@ -12,10 +12,34 @@ To use the BTU Calculator, simply include the following HTML code in your projec
 
 ```.html
 <div id="btuCalculator"></div>
-<script src="./path-to-your/simple-webtools/dist/webtools.js"></script>
+
+<script src="https://unpkg.com/simple-webtools@latest/dist/webtools.js"></script>
+
+<script>
+  // Create a BTU calculator
+  webtools.btuCalculator.create();
+</script>
 ```
 
-Replace "./path-to-your" with the actual path to your simple-webtools distribution folder.
+![image](https://github.com/wilmerm/webtools/assets/44853160/f8872ed1-de21-4195-b26f-8aed3b035caf)
+
+## Installation
+
+### CDN
+
+[https://unpkg.com/simple-webtools@latest/dist/webtools.js](https://unpkg.com/simple-webtools@latest/dist/webtools.js)
+
+### Install with Npm
+
+```.sh
+npm install simple-webtools
+```
+
+### Install with Yarn
+
+```.sh
+yarn add simple-webtools
+```
 
 ## Developer
 
@@ -47,3 +71,15 @@ Created by Wilmer Martinez
 
 * Website: [wilmermartinez.dev](https://wilmermartinez.dev)
 * Email: info@wilmermartinez.dev
+
+## Proyect Status
+
+This project is under development
+
+## Contribution 💗
+
+If you find value in this project and would like to show your support, please consider making a donation via PayPal:
+
+[Donate on PayPal](https://paypal.me/martinezwilmer?country.x=DO&locale.x=es_XC)
+
+Your generosity helps us to continue improving and maintaining this project. We appreciate every contribution, however small. Thanks for being part of our community!
