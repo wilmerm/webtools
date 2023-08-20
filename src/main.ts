@@ -1,4 +1,3 @@
-import './style.css'
 import BTUCalculator from './btn_calculator';
 
 

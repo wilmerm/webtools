@@ -13,13 +13,14 @@ export default class BTUCalculator {
       lenght: 'Lenght',
       width: 'Width',
       results: 'Results',
-      approximatePowerRequired: 'Approximate power required:',
+      suggestedPower: 'Approximate power required',
       recommendedPower: 'Recommended power',
     },
     defaults: {
       height: 15,
       lenght: 12,
       width: 9,
+      credits: 'https://wilmermartinez.dev'
     }
   }
   private height: number;
@@ -51,6 +52,7 @@ export default class BTUCalculator {
   create(selector?: string) {
     selector = selector || `#${this.prefix}`;
     this.createElements(this.conf, selector);
+    this.calculate();
   }
 
   createElements(conf: Conf, selector: string) {
@@ -64,14 +66,9 @@ export default class BTUCalculator {
     <div>
       <style>
         .form-control {
-
-          padding: .5rem;
-          border: 1px solid #999;
-          border-radius: 4px;
           margin-bottom: 1rem;
-        }
-        .form-control[type=number] {
-          text-align: right;
+          width: 100%;
+          text-align: center;
         }
         .form-control-container {
           display: flex;
@@ -84,20 +81,23 @@ export default class BTUCalculator {
           font-weight: bold;
         }
         .btu-calculator {
-          padding: 1rem;
-          background-color: #fff;
-          border: 1px solid #ccc;
           position: relative;
+          text-align: center;
         }
         .btu-calculator-form {
           position: relative;
         }
-
-        .btu-required {
+        .btu-suggested {
+          margin-top: 0.5rem;
           margin-bottom: 1rem;
         }
-        .btu-suggested {
-          margin-bottom: 1rem;
+        .btu-required {
+          /**/
+        }
+        .btu-calculator-credits {
+          position: absolute;
+          font-size: 0.6rem;
+          text-decoration: none;
         }
       </style>
       <div class="btu-calculator">
@@ -126,14 +126,17 @@ export default class BTUCalculator {
           </div>
         </div>
         <div class="btu-calculator-results">
-          <div class="btu-required">
-            <div>${conf.translation.recommendedPower}</div>
-            <div id="btuRequired" class="fw-bold"></div>
-          </div>
           <div class="btu-suggested">
-            <div>${conf.translation.recommendedPower}</div>
+            <div>${conf.translation.suggestedPower}:</div>
             <div id="btuSuggested" class="fw-bold"></div>
           </div>
+          <div class="btu-required">
+            <div>${conf.translation.recommendedPower}:</div>
+            <div id="btuRequired" class="fw-bold"></div>
+          </div>
+        </div>
+        <div class="btu-calculator-credits">
+          <a href="${conf.defaults.credits}" target="_blank">Credits</a>
         </div>
       </div>
 

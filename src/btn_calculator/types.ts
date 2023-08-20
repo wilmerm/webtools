@@ -5,7 +5,7 @@ export type Translation = {
   lenght: string;
   width: string;
   results: string;
-  approximatePowerRequired: string;
+  suggestedPower: string;
   recommendedPower: string;
 }
 
@@ -14,6 +14,7 @@ export type Defaults = {
   height: number;
   lenght: number;
   width: number;
+  credits: string;
 }
 
 

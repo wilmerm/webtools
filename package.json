@@ -1,8 +1,14 @@
 {
   "name": "simple-webtools",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.9",
   "description": "A collection of simple and lightweight web tools to enhance development workflows and user experiences.",
+  "license": "MIT",
+  "homepage": "https://wilmermartinez.dev/codigos/javascript-simple-webtools/",
+  "funding": {
+    "type": "url",
+    "url": "https://wilmermartinez.dev/apoyo-y-contribuciones/"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -17,5 +23,30 @@
     "email": "info@wilmermartinez.dev",
     "name": "Wilmer Martinez",
     "url": "https://wilmermartinez.dev"
-  }
+  },
+  "files": [
+    "dist",
+    "src",
+    "public",
+    "LICENCE",
+    "index.html",
+    "package.json",
+    "tsconfig.json",
+    "vite.config.ts"
+  ],
+  "keywords": [
+    "web-tools",
+    "utilities",
+    "calculator",
+    "frontend",
+    "development-tools",
+    "web-utils",
+    "web-utilities",
+    "web-utilities-kit",
+    "web-helper",
+    "web-toolkit",
+    "simple-tools",
+    "web-resources",
+    "btu-calculator"
+  ]
 }
