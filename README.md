@@ -12,23 +12,35 @@ To use the BTU Calculator, simply include the following HTML code in your projec
 
 ```.html
 <div id="btuCalculator"></div>
+
+<script src="https://unpkg.com/simple-webtools@latest/dist/webtools.js"></script>
+
+<script>
+  window.addEventListener('load', (event) => {
+    window.webtools.btuCalculator.create('#btuCalculator');
+  });
+</script>
+```
+
+![image](https://github.com/wilmerm/webtools/assets/44853160/d224cda7-427c-4680-ae1f-d86bc927f8fe)
+
+### currencyRates (Currency Rates List)
+
+This tool provides an interactive widget that displays updated exchange rates. Information is updated daily, ensuring you always have accurate and relevant data at your disposal.
+
+```.html
 <div id="currencyRates"></div>
 
 <script src="https://unpkg.com/simple-webtools@latest/dist/webtools.js"></script>
 
 <script>
   window.addEventListener('load', (event) => {
-    // Create a BTU calculator
-    window.webtools.btuCalculator.create('#btuCalculator');
-
-    // Create Currency Rates List
     window.webtools.currencyRates.create('#currencyRates', 'USD', ['CNY', 'EUR', 'CLP', 'GBP', 'GTQ', 'NIO']);
   });
 </script>
 ```
 
-![image](https://github.com/wilmerm/webtools/assets/44853160/4898fd86-87d2-4689-89f3-c761f77814c9)
-
+![image](https://github.com/wilmerm/webtools/assets/44853160/e5a63e3d-ca86-4505-a399-c42292bf4f85)
 
 ## Installation
 
