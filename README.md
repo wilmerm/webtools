@@ -27,7 +27,8 @@ To use the BTU Calculator, simply include the following HTML code in your projec
 </script>
 ```
 
-![image](https://github.com/wilmerm/webtools/assets/44853160/f8872ed1-de21-4195-b26f-8aed3b035caf)
+![image](https://github.com/wilmerm/webtools/assets/44853160/4898fd86-87d2-4689-89f3-c761f77814c9)
+
 
 ## Installation
 
