@@ -40,10 +40,11 @@ export default class CurrencyRates {
       this.displayCurrencyCodes = displayCurrencyCodes;
     }
 
-    this.createElements(this.conf, selector);
+    this.createElements(selector);
   }
 
-  async createElements(conf: Conf, selector: string) {
+  async createElements(selector: string) {
+
     const containerElement = document.querySelector(selector);
 
     if (!containerElement) {
