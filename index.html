@@ -4,18 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS (dev)</title>
+    <link rel="stylesheet" href="/src/css/style.css">
   </head>
   <body>
 
     <section>
-      <h2>BTU Calculator</h2>
-      <div id="btuCalculator"></div>
+      <div class="d-flex">
+        <div class="card m-1">
+          <h2 class="card-header">btuCalculator</h2>
+          <div class="card-body">
+            <div id="btuCalculator"></div>
+          </div>
+        </div>
+        <div class="card m-1">
+          <h2 class="card-header">currencyRates</h2>
+          <div class="card-body">
+            <div id="currencyRates"></div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <script type="module" src="/src/main.ts"></script>
 
     <script>
-      webtools.btuCalculator.create();
+      window.addEventListener('load', (event) => {
+        window.webtools.btuCalculator.create('#btuCalculator');
+        window.webtools.currencyRates.create('#currencyRates', 'USD', ['CNY', 'EUR', 'CLP', 'GBP', 'GTQ', 'NIO']);
+      });
     </script>
   </body>
 </html>

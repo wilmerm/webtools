@@ -12,12 +12,18 @@ To use the BTU Calculator, simply include the following HTML code in your projec
 
 ```.html
 <div id="btuCalculator"></div>
+<div id="currencyRates"></div>
 
 <script src="https://unpkg.com/simple-webtools@latest/dist/webtools.js"></script>
 
 <script>
-  // Create a BTU calculator
-  webtools.btuCalculator.create();
+  window.addEventListener('load', (event) => {
+    // Create a BTU calculator
+    window.webtools.btuCalculator.create('#btuCalculator');
+
+    // Create Currency Rates List
+    window.webtools.currencyRates.create('#currencyRates', 'USD', ['CNY', 'EUR', 'CLP', 'GBP', 'GTQ', 'NIO']);
+  });
 </script>
 ```
 

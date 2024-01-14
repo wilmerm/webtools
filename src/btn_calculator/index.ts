@@ -94,11 +94,6 @@ export default class BTUCalculator {
         .btu-required {
           /**/
         }
-        .btu-calculator-credits {
-          position: absolute;
-          font-size: 0.6rem;
-          text-decoration: none;
-        }
       </style>
       <div class="btu-calculator">
         <div class="btuCalculatorAlerts">
@@ -134,9 +129,6 @@ export default class BTUCalculator {
             <div>${conf.translation.recommendedPower}:</div>
             <div id="btuRequired" class="fw-bold"></div>
           </div>
-        </div>
-        <div class="btu-calculator-credits">
-          <a href="${conf.defaults.credits}" target="_blank">Credits</a>
         </div>
       </div>
 
