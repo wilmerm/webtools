@@ -24,7 +24,7 @@ export default class CurrencyRates {
 
   constructor(mainCurrencyCode = 'USD', displayCurrencyCodes?: string[]) {
     this.mainCurrencyCode = mainCurrencyCode || this.conf.defaults.mainCurrencyCode;
-    this.exchangeRatesApiUrl = `${exchangeRatesApiUrl}${this.mainCurrencyCode}/`;
+    this.exchangeRatesApiUrl = `${exchangeRatesApiUrl}${this.mainCurrencyCode}/?natural=1`;
     this.displayCurrencyCodes = displayCurrencyCodes;
   }
 
@@ -33,7 +33,7 @@ export default class CurrencyRates {
 
     if (mainCurrencyCode) {
       this.mainCurrencyCode = mainCurrencyCode;
-      this.exchangeRatesApiUrl = `${exchangeRatesApiUrl}${this.mainCurrencyCode}/`;
+      this.exchangeRatesApiUrl = `${exchangeRatesApiUrl}${this.mainCurrencyCode}/?natural=1`;
     }
 
     if (displayCurrencyCodes) {
